@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>얼굴 감정 인식</title>
+    <style>
+        #videoElement, #imageElement {
+            max-width: 100%;
+            height: auto;
+        }
+        #resultCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>얼굴 감정 인식</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <video id="videoElement" autoplay></video>
+    <button id="captureButton">캡처</button>
+    <div id="imageContainer" style="position: relative;">
+        <canvas id="resultCanvas" style="display: block; max-width: 100%; height: auto; border: 1px solid #000;"></canvas>
+    </div>
+    
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
